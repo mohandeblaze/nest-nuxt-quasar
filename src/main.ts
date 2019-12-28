@@ -5,13 +5,11 @@ import { NotFoundExceptionFilter } from './notfoundexception.filter';
 
 const { Nuxt, Builder } = require('nuxt');
 
-const config = require(resolve(__dirname, '../../nuxt.config.js'));
+const config = require(resolve(__dirname, '../nuxt.config.js'));
 
 config.dev = process.env.NODE_ENV !== 'production';
 
 export const nuxt = new Nuxt(config);
-
-const { host, port } = nuxt.options.server;
 
 async function bootstrap() {
   // Build only in dev mode

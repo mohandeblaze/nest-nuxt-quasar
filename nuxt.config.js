@@ -29,7 +29,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/quasar.js'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -39,7 +39,9 @@ module.exports = {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+
+  ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
@@ -49,7 +51,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    transpile: [],
+    transpile: ['quasar'],
     /*
      ** You can extend webpack config here
      */
